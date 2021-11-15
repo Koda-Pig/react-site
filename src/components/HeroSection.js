@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
-import video from '../videos/video-2.mp4';
+import video from '../videos/space-video-1.mp4';
 
 function HeroSection() {
   return (
@@ -15,22 +15,15 @@ function HeroSection() {
         type='video/mp4'
       >
       </video>
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <h1>THE COSMOS AWAITS</h1>
+      <p>What's stopping you?</p>
       <div className="hero-btns">
         <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          BOOK FLIGHT
         </Button>
       </div>
     </div>

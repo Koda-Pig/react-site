@@ -3,9 +3,10 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
-import Products from './components/pages/Products';
-import Services from './components/pages/Services';
-import SignUp from './components/pages/SignUp';
+import Map from './components/pages/Map';
+import About from './components/pages/About';
+import BookFlight from './components/pages/BookFlight';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,12 +14,13 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/products' element={<Products />} />
-      <Route path='/services' element={<Services />} />
-      <Route path='/sign-up' element={<SignUp />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/map' element={<Map />} />
+        <Route path='/book-flight' element={<BookFlight />} />
       </Routes>
-      </Router>
+      <Footer />
+    </Router>
     </>
   );
 }

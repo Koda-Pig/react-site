@@ -5,10 +5,27 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+/* Scrollbar customization */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fff;
+}
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #2D333B;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #848484;
+  border-radius: 20px;
+}
+
 .home,
-.services,
-.products,
-.sign-up {
+.about,
+.map,
+.book-flight {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -16,8 +33,8 @@
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('images/img-2.jpg');
+.about {
+  background-image: url('images/space-5.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,8 +42,8 @@
   font-size: 100px;
 }
 
-.products {
-  background-image: url('images/img-1.jpg');
+.map {
+  background-image: url('images/space-7.jpg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -34,11 +51,17 @@
   font-size: 100px;
 }
 
-.sign-up {
-  background-image: url('images/img-8.jpg');
+.book-flight {
+  background-image: url('images/space-10.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+
+/* About */
+img .about__team  {
+  width: 20px;
 }

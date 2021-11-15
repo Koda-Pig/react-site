@@ -8,10 +8,10 @@ function Footer() {
     <div className='footer-container'>
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join the adventure newsletter to receive our best vacation deals
+          join the cosm newsletter to receive our best intergalactic deals
         </p>
         <p className="footer-subscription-text">
-          You can unsubscribe at any time.
+          You can unsubscribe at any time.<sup>*5 years min</sup>
         </p>
         <div className="input-areas">
           <form>
@@ -24,7 +24,7 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
+            <Link to='/'>How it works</Link>
             <Link to='/'>Testimonials</Link>
             <Link to='/'>Careers</Link>
             <Link to='/'>Investors</Link>
@@ -32,40 +32,24 @@ function Footer() {
           </div>
           <div className="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>T's & C's</Link>
+            <Link to='/'>Speak to a bot</Link>
+            <Link to='/'>Virtual meet</Link>
+            <Link to='/'>SkyChat</Link>
+            <Link to='/'>Call</Link>
+            <Link to='/'>Fax</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>Social Media</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>T's & C's</Link>
+            <h2>Trusted By</h2>
+            <Link to='/'>Uncle Fred™</Link>
+            <Link to='/'>Nefarious George™</Link>
+            <Link to='/'>Luuna™</Link>
+            <Link to='/'>Ark VR™</Link>
+            <Link to='/'>The Neighbor™</Link>
           </div>
           <div className="footer-link-items">
-            <h2>Trusted by</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>T's & C's</Link>
-          </div>
-        </div>
-      </div>
-      <section className="social-media">
-        <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link className="social-logo" to='/'>
-              TRVL <i className="fab fa-typo3"></i>
-            </Link>
-          </div>
-          <small className="website-rights">TRVL © {(new Date().getFullYear())}</small>
+            <h2>Social Media</h2>
           <div className="social-icons">
             <Link
               to='/'
@@ -108,6 +92,12 @@ function Footer() {
               <i className="fab fa-youtube"></i>
             </Link>
           </div>
+          </div>
+        </div>
+      </div>
+      <section className="social-media">
+        <div className="website-rights-wrap">
+          <small className="website-rights">COSM © {(new Date().getFullYear())}</small>
         </div>
       </section>
     </div>
