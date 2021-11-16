@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, Stars } from '@react-three/drei';
 import { Physics } from '@react-three/cannon';
@@ -37,8 +37,6 @@ function GalaxyMap() {
   const [terrestrial, venusian, savannah, moon, volcanic, martian, gaseous3, gaseous4, icy] = useLoader(TextureLoader, [TerrestrialTex, VenusianTex, SavannahTex, MoonTex, VolcanicTex, MartianTex, Gaseous3Tex, Gaseous4Tex, IcyTex]);
   return (
     <Canvas className='galaxy-map'>
-        <Suspense fallback={<h1>Loading map...</h1>}>
-        </Suspense>
       <OrbitControls enablePan={true}/>
       <Stars />
       <ambientLight intensity={0.5} />
