@@ -1,0 +1,35 @@
+.galaxy-map canvas {
+  background: #000;
+  height: 80vh;
+  width: auto;
+  border-radius: 10px;
+  touch-action: pinch-zoom;
+}
+
+div.galaxy-map {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+div.section.galaxy-map {
+  padding-top: 2rem;
+}
+
+.galaxy-map h2 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.galaxy-map p {
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  div.section.galaxy-map {
+    padding: 1rem;
+  }
+
+  .galaxy-map canvas {
+    height: 60vh;
+  }
+}

@@ -39,13 +39,13 @@ function Cards() {
               src={space2}
               text="visit Taniquetil: the highest peak known to all beings (that we have conversed with thus far)"
               label='adventure'
-              path='/services'
+              path='/map'
             />
             <CardItem
               src={space5}
               text='use the ancient doorway to travel to distant and unusual pockets of the multiverse'
               label='multiverse'
-              path='/services'
+              path='/map'
             />
           </ul>
         </div>

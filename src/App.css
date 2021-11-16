@@ -2,7 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Shippori Antique B1', sans-serif;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Scrollbar customization */
@@ -61,7 +64,44 @@
 }
 
 
-/* About */
-img .about__team  {
-  width: 20px;
+
+.section {
+  padding: 4rem;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.section p {
+  margin-bottom: 1rem;
+}
+
+.section p sup {
+  font-size: 0.7rem;
+}
+
+.section p a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #3E1D29;
+  transition: color 200ms ease-out;
+}
+
+.section p a:hover {
+  color: #8a113d;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  margin: 50px 0 45px;
 }
