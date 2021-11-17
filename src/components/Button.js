@@ -2,7 +2,7 @@ import React from 'react'
 import './Button.css';
 import { Link } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline'];
+const STYLES = ['btn--primary', 'btn--outline', 'btn--form--submit'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
@@ -11,19 +11,22 @@ export const Button = ({
   type,
   onClick,
   buttonStyle,
-  buttonSize
+  buttonSize,
+  linkTo
 }) => 
   {
-    const checkButtonStyle = STYLES.includes(buttonStyle)
-    ? buttonStyle
-    : STYLES[0];
+    // This is an example of a ternary conditional chain
+    const checkButtonStyle =
+    STYLES.includes(buttonStyle) ? buttonStyle
+    : STYLES.includes(buttonStyle[1]) ? STYLES[1]
+    : STYLES[2]
 
     const checkButtonSize = SIZES.includes(buttonSize)
     ? buttonSize
     : SIZES[0];
 
     return (
-      <Link to='/book-flight' className='btn-mobile'>
+      <Link to={linkTo} className='btn-mobile'>
         <button
           className={`btn ${checkButtonStyle} ${checkButtonSize}`}
           onClick={onClick}

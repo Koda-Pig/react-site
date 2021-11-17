@@ -10,9 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
     <Suspense fallback={<h1>Loading...</h1>}>
-    </Suspense>
     <Router>
       <Navbar />
       <Routes>
@@ -23,7 +21,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
-    </>
+    </Suspense>
   );
 }
 

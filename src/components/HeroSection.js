@@ -22,6 +22,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          linkTo='/book-flight'
         >
           BOOK FLIGHT
         </Button>

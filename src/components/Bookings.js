@@ -2,8 +2,11 @@ import React from "react";
 import { Button } from './Button';
 import { Link } from 'react-router-dom'
 import './Bookings.css';
+import './Button.css';
 
-function GalaxyMap() {
+
+
+function Bookings() {
   return (
     <>
           <form className='booking-form'>
@@ -45,11 +48,10 @@ function GalaxyMap() {
                 </select>
               </div>
             </div>
-            <input type="email" name='email' placeholder='example@mail.com' className="footer-input" />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button linkTo='/' type='submit' buttonStyle='btn btn--form--submit' >BOOK NOW</Button>
           </form>
     </>
   )
 }
 
-export default GalaxyMap;
+export default Bookings;

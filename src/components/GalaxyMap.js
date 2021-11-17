@@ -34,8 +34,10 @@ function Planet(props) {
 }
 
 function GalaxyMap() {
-  const [terrestrial, venusian, savannah, moon, volcanic, martian, gaseous3, gaseous4, icy] = useLoader(TextureLoader, [TerrestrialTex, VenusianTex, SavannahTex, MoonTex, VolcanicTex, MartianTex, Gaseous3Tex, Gaseous4Tex, IcyTex]);
+  const [terrestrial, venusian, savannah, moon, volcanic, martian, gaseous3, gaseous4, icy] =
+    useLoader(TextureLoader, [TerrestrialTex, VenusianTex, SavannahTex, MoonTex, VolcanicTex, MartianTex, Gaseous3Tex, Gaseous4Tex, IcyTex]);
   return (
+    <>
     <Canvas className='galaxy-map'>
       <OrbitControls enablePan={true}/>
       <Stars />
@@ -99,6 +101,7 @@ function GalaxyMap() {
         />
         </Physics>
     </Canvas>
+    </>
   )
 }
 

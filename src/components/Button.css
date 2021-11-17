@@ -5,7 +5,7 @@
 
 .btn {
   padding: 8px 20px;
-  border-radius: 2px;
+  border-radius: 2rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -41,4 +41,15 @@
   background: var(--primary);
   color: var(--secondary);
   transition: all 250ms ease-out; 
+}
+
+.btn--form--submit {
+  border: 1px solid var(--secondary);
+  transition: all 250ms ease-out;
+}
+
+.btn--form--submit:hover {
+  background: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--secondary);
 }
